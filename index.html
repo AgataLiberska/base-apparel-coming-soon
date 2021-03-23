@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/styles/css/styles.css">
+
+  <script src="/js/script.js" defer></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 
@@ -24,9 +26,9 @@
         </h1>
         <p class="signup__tagline">Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="/" class="signup__form">
-          <input type="text" class="signup__form__input" aria-label="Enter email address" placeholder="Email Address">
-          <div class="signup__form__error hidden">
+        <form action="/" class="signup__form js-form" novalidate>
+          <input type="text" class="signup__form__input js-email" aria-label="Enter email address" placeholder="Email Address">
+          <div class="signup__form__error hidden js-form-error">
             <img src="images/icon-error.svg" class="signup__form__error-icon" alt="Error">
             <span class="signup__form__error-msg" aria-live="polite">Please provide a valid email</span>
           </div>
