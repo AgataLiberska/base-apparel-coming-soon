@@ -1,0 +1,104 @@
+.signup {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.signup__heading {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    font-weight: $light;
+    color: $main-text;
+    text-transform: uppercase;
+    letter-spacing: 0.625rem;
+
+    & span {
+        font-weight: $bold;
+        color: $accent-text;
+    }
+}
+
+.signup__tagline {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: $main-text;
+}
+
+.signup__form {
+    position: relative;
+}
+
+.signup__form__input {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.6785rem 6.5rem 0.5625rem 1.5rem;
+    border: 1px solid $form-border;
+    border-radius: 2.75rem;
+    background-color: transparent;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    color: $form-input;
+    transition: box-shadow 200ms ease-out;
+
+    &::placeholder {
+        color: $form-placeholder;
+        opacity: 0.5;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 5px 4px $form-focus;
+    }
+
+    &.not-valid {
+        border: 2px solid $error;
+    }
+}
+
+.signup__form__submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3rem;
+    width: 4rem;
+    padding-left: 0.5rem;
+    background-image: $button-gradient;
+    border: 0;
+    border-radius: 1.75rem;
+    transition: box-shadow 200ms ease-out;
+
+    &:hover {
+        box-shadow: $button-focus;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: $button-focus;
+    }
+}
+
+.signup__form__error {
+    text-align: left;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.signup__form__error-icon {
+    position: absolute;
+    top: 0.75rem;
+    right: 4.5rem;
+}
+
+.signup__form__error-msg {
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: $bold;
+    color: $error;
+}

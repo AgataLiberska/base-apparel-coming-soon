@@ -17,4 +17,150 @@ body {
   background-image: linear-gradient(135deg, #FFFFFF, #FFF4F4);
   font-family: "Josefin Sans", sans-serif;
 }
+
+.header {
+  padding: 2rem;
+}
+
+.header__logo {
+  height: 1.25rem;
+}
+
+.hero {
+  height: 31vh;
+  width: 100%;
+  background-image: url(/images/hero-mobile.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.signup {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.signup__heading {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  font-weight: 300;
+  color: #CE9898;
+  text-transform: uppercase;
+  letter-spacing: 0.625rem;
+}
+
+.signup__heading span {
+  font-weight: 600;
+  color: #423A3A;
+}
+
+.signup__tagline {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  color: #CE9898;
+}
+
+.signup__form {
+  position: relative;
+}
+
+.signup__form__input {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 0.6785rem 6.5rem 0.5625rem 1.5rem;
+  border: 1px solid rgba(206, 152, 152, 0.5);
+  border-radius: 2.75rem;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  color: #423A3A;
+  -webkit-transition: -webkit-box-shadow 200ms ease-out;
+  transition: -webkit-box-shadow 200ms ease-out;
+  transition: box-shadow 200ms ease-out;
+  transition: box-shadow 200ms ease-out, -webkit-box-shadow 200ms ease-out;
+}
+
+.signup__form__input::-webkit-input-placeholder {
+  color: rgba(216, 180, 180, 0.5);
+  opacity: 0.5;
+}
+
+.signup__form__input:-ms-input-placeholder {
+  color: rgba(216, 180, 180, 0.5);
+  opacity: 0.5;
+}
+
+.signup__form__input::-ms-input-placeholder {
+  color: rgba(216, 180, 180, 0.5);
+  opacity: 0.5;
+}
+
+.signup__form__input::placeholder {
+  color: rgba(216, 180, 180, 0.5);
+  opacity: 0.5;
+}
+
+.signup__form__input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px 4px #f0d0d0;
+          box-shadow: 0 0 5px 4px #f0d0d0;
+}
+
+.signup__form__input.not-valid {
+  border: 2px solid #F96464;
+}
+
+.signup__form__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3rem;
+  width: 4rem;
+  padding-left: 0.5rem;
+  background-image: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+  border: 0;
+  border-radius: 1.75rem;
+  -webkit-transition: -webkit-box-shadow 200ms ease-out;
+  transition: -webkit-box-shadow 200ms ease-out;
+  transition: box-shadow 200ms ease-out;
+  transition: box-shadow 200ms ease-out, -webkit-box-shadow 200ms ease-out;
+}
+
+.signup__form__submit:hover {
+  -webkit-box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+          box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+}
+
+.signup__form__submit:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+          box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+}
+
+.signup__form__error {
+  text-align: left;
+}
+
+.signup__form__error.hidden {
+  display: none;
+}
+
+.signup__form__error-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 4.5rem;
+}
+
+.signup__form__error-msg {
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #F96464;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -25,9 +25,11 @@
       <p class="signup__tagline">Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form action="/" class="signup__form">
-        <input type="text" class="signup__form__control" aria-label="Enter email address" placeholder="Email Address">
-        <img src="images/icon-error.svg" class="signup__form__error-icon" alt="Error">
-        <span class="signup__form_error-msg" aria-live="polite">Please provide a valid email</span>
+        <input type="text" class="signup__form__input" aria-label="Enter email address" placeholder="Email Address">
+        <div class="signup__form__error hidden">
+          <img src="images/icon-error.svg" class="signup__form__error-icon" alt="Error">
+          <span class="signup__form__error-msg" aria-live="polite">Please provide a valid email</span>
+        </div>
         <button class="signup__form__submit" aria-label="Submit"><img src="images/icon-arrow.svg" alt=""></button>
       </form>
     </section>
