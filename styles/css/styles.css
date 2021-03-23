@@ -18,12 +18,51 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+@media (min-width: 48rem) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    -ms-grid-rows: 18.5rem calc(100vh - 18.5rem);
+        grid-template-rows: 18.5rem calc(100vh - 18.5rem);
+        grid-template-areas: "header aside" "main aside";
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
 .header {
   padding: 2rem;
 }
 
+@media (min-width: 48rem) {
+  .header {
+    padding: 4.75rem 3rem;
+  }
+}
+
 .header__logo {
   height: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  .header__logo {
+    height: 2rem;
+  }
 }
 
 .hero {
@@ -35,9 +74,23 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 48rem) {
+  .hero {
+    height: 100%;
+    background-image: url("/images/hero-desktop.jpg");
+  }
+}
+
 .signup {
   padding: 4rem 2rem;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .signup {
+    padding: 0 3rem;
+    text-align: left;
+  }
 }
 
 .signup__heading {

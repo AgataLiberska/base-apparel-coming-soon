@@ -14,4 +14,28 @@ body {
     width: 100vw;
     background-image: $background-gradient;
     font-family: $main-font;
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 18.5rem calc(100vh - 18.5rem);
+        grid-template-areas: 
+            "header aside"
+            "main aside";
+        background-image: url('/images/bg-pattern-desktop.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+
 }

@@ -1,6 +1,13 @@
 .signup {
     padding: 4rem 2rem;
     text-align: center;
+    
+    @include breakpoint-up(medium) {
+        padding: 0 3rem;
+        text-align: left;
+    }
+
+
 }
 
 .signup__heading {
