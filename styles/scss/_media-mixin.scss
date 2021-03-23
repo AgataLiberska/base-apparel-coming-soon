@@ -1,4 +1,8 @@
-$breakpoints-up: ("medium" : "48rem", "large" : "64rem", "xlarge": "90rem");
+$breakpoints-up: (
+    "medium" : "48rem", 
+    "large" : "64rem", 
+    "xlarge": "90rem"
+    );
 
 @mixin breakpoint-up($size) {
     @media (min-width: map-get($breakpoints-up, $size)) {

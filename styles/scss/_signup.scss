@@ -122,6 +122,7 @@
     background-image: $button-gradient;
     border: 0;
     border-radius: 1.75rem;
+    cursor: pointer;
     transition: box-shadow 200ms ease-out;
 
     &:hover {
