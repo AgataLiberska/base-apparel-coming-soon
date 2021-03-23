@@ -3,11 +3,15 @@
     text-align: center;
     
     @include breakpoint-up(medium) {
+        max-width: 30rem;
         padding: 0 3rem;
         text-align: left;
     }
 
-
+    @include breakpoint-up(large) {
+        max-width: 40rem;
+        padding: 0 6rem;
+    }
 }
 
 .signup__heading {
@@ -23,6 +27,19 @@
         font-weight: $bold;
         color: $accent-text;
     }
+
+    @include breakpoint-up(medium) {
+        max-width: 20rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        max-width: 27.5rem;
+        font-size: 4rem;
+        line-height: 4.4375rem;
+    }
 }
 
 .signup__tagline {
@@ -30,6 +47,11 @@
     font-size: 0.875rem;
     line-height: 1.625rem;
     color: $main-text;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+    }
 }
 
 .signup__form {
@@ -63,6 +85,15 @@
     &.not-valid {
         border: 2px solid $error;
     }
+
+    @include breakpoint-up(medium) {
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding-right: 9.25rem;
+    }
 }
 
 .signup__form__submit {
@@ -85,6 +116,14 @@
         outline: 0;
         box-shadow: $button-focus;
     }
+
+    @include breakpoint-up(medium) {
+        height: 3.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        width: 6.25rem;
+    }
 }
 
 .signup__form__error {
@@ -99,6 +138,15 @@
     position: absolute;
     top: 0.75rem;
     right: 4.5rem;
+
+    @include breakpoint-up(medium) {
+        top: 1rem;
+        right: 4.75rem;
+    }
+
+    @include breakpoint-up(large) {
+        right: 6.75rem;
+    }
 }
 
 .signup__form__error-msg {
@@ -108,4 +156,9 @@
     font-size: 0.75rem;
     font-weight: $bold;
     color: $error;
+
+    @include breakpoint-up(medium) {
+        margin-top: 0.75rem;
+        font-size: 1rem;
+    }
 }

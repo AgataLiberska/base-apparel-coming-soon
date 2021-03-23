@@ -4,6 +4,10 @@
     @include breakpoint-up(medium) {
         padding: 4.75rem 3rem;
     }
+
+    @include breakpoint-up(large) {
+        padding: 4.75rem 6rem;
+    }
 }
 
 .header__logo {
