@@ -26,6 +26,10 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    @include breakpoint-up(xlarge) {
+        grid-template-columns: 58% 42%;
+    }
 }
 
 header {
