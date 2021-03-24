@@ -3,13 +3,13 @@
     text-align: center;
     
     @include breakpoint-up(medium) {
-        max-width: 30rem;
+        max-width: 60vw;
         padding: 0 3rem;
         text-align: left;
     }
 
     @include breakpoint-up(large) {
-        max-width: 40rem;
+        max-width: 58vw;
         padding-left: 6rem;
     }
 

@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   width: 100vw;
   background-image: linear-gradient(135deg, #FFFFFF, #FFF4F4);
@@ -20,36 +21,10 @@ body {
 
 @media (min-width: 48rem) {
   body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 60% 40%;
-        grid-template-columns: 60% 40%;
-    -ms-grid-rows: 16rem calc(100vh - 16rem);
-        grid-template-rows: 16rem calc(100vh - 16rem);
-        grid-template-areas: "header aside" "main aside";
     background-image: url("/images/bg-pattern-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }
-}
-
-@media (min-width: 90rem) {
-  body {
-    -ms-grid-columns: 58% 42%;
-        grid-template-columns: 58% 42%;
-  }
-}
-
-header {
-  grid-area: header;
-}
-
-aside {
-  grid-area: aside;
-}
-
-main {
-  grid-area: main;
 }
 
 .header {
@@ -58,19 +33,19 @@ main {
 
 @media (min-width: 48rem) {
   .header {
-    padding: 4.75rem 3rem;
+    padding: 4.75rem 3rem 8rem;
   }
 }
 
 @media (min-width: 64rem) {
   .header {
-    padding: 4.75rem 6rem;
+    padding: 4.75rem 6rem 8.5rem;
   }
 }
 
 @media (min-width: 90rem) {
   .header {
-    padding: 4.75rem 10.5rem;
+    padding: 4.75rem 10.5rem 8.5rem;
   }
 }
 
@@ -95,8 +70,19 @@ main {
 
 @media (min-width: 48rem) {
   .hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40vw;
     height: 100%;
     background-image: url("/images/hero-desktop.jpg");
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    width: 42vw;
   }
 }
 
@@ -107,7 +93,7 @@ main {
 
 @media (min-width: 48rem) {
   .signup {
-    max-width: 30rem;
+    max-width: 60vw;
     padding: 0 3rem;
     text-align: left;
   }
@@ -115,7 +101,7 @@ main {
 
 @media (min-width: 64rem) {
   .signup {
-    max-width: 40rem;
+    max-width: 58vw;
     padding-left: 6rem;
   }
 }

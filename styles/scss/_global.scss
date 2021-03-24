@@ -10,36 +10,39 @@ html {
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     width: 100vw;
     background-image: $background-gradient;
     font-family: $main-font;
 
     @include breakpoint-up(medium) {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 16rem calc(100vh - 16rem);
-        grid-template-areas: 
-            "header aside"
-            "main aside";
+        // display: grid;
+        // grid-template-columns: 60% 40%;
+        // grid-template-rows: 16rem calc(100vh - 16rem);
+        // grid-template-areas: 
+        //     "header aside"
+        //     "main aside";
         background-image: url('/images/bg-pattern-desktop.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    @include breakpoint-up(xlarge) {
-        grid-template-columns: 58% 42%;
-    }
+    // @include breakpoint-up(xlarge) {
+    //     grid-template-columns: 58% 42%;
+    // }
 }
 
-header {
-    grid-area: header;
-}
-aside {
-    grid-area: aside;
-}
 
-main {
-    grid-area: main;
 
-}
+// header {
+//     grid-area: header;
+// }
+// aside {
+//     grid-area: aside;
+// }
+
+// main {
+//     grid-area: main;
+
+// }
