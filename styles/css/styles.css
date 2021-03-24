@@ -250,21 +250,22 @@ body {
   border: 0;
   border-radius: 1.75rem;
   cursor: pointer;
-  -webkit-transition: -webkit-box-shadow 200ms ease-out;
-  transition: -webkit-box-shadow 200ms ease-out;
-  transition: box-shadow 200ms ease-out;
-  transition: box-shadow 200ms ease-out, -webkit-box-shadow 200ms ease-out;
+  -webkit-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+          box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  -webkit-transition: opacity 200ms ease-out, -webkit-box-shadow 200ms ease-out;
+  transition: opacity 200ms ease-out, -webkit-box-shadow 200ms ease-out;
+  transition: box-shadow 200ms ease-out, opacity 200ms ease-out;
+  transition: box-shadow 200ms ease-out, opacity 200ms ease-out, -webkit-box-shadow 200ms ease-out;
 }
 
 .signup__form__submit:hover {
-  -webkit-box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
-          box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+  opacity: 0.5;
 }
 
 .signup__form__submit:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
-          box-shadow: 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+  -webkit-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569), 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
+          box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569), 0 0 0px 1px #FFF4F4, 0 0 5px 5px #F8BFBF;
 }
 
 @media (min-width: 48rem) {

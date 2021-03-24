@@ -123,15 +123,16 @@
     border: 0;
     border-radius: 1.75rem;
     cursor: pointer;
-    transition: box-shadow 200ms ease-out;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    transition: box-shadow 200ms ease-out, opacity 200ms ease-out;
 
     &:hover {
-        box-shadow: $button-focus;
+        opacity: 0.5;
     }
 
     &:focus {
         outline: 0;
-        box-shadow: $button-focus;
+        box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569), $button-focus;
     }
 
     @include breakpoint-up(medium) {
