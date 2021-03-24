@@ -54,7 +54,7 @@
 }
 
 .signup__tagline {
-    margin-bottom: 2rem;
+    margin-bottom: 4vh;
     font-size: 0.875rem;
     line-height: 1.625rem;
     color: $main-text;
@@ -72,6 +72,13 @@
 
 .signup__form {
     position: relative;
+    max-width: 27rem;
+    margin: 0 auto;
+
+    @include breakpoint-up(medium) {
+        max-width: 35rem;
+        margin: unset;
+    }
 }
 
 .signup__form__input {

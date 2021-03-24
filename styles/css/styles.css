@@ -154,7 +154,7 @@ body {
 }
 
 .signup__tagline {
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
   font-size: 0.875rem;
   line-height: 1.625rem;
   color: #CE9898;
@@ -176,6 +176,15 @@ body {
 
 .signup__form {
   position: relative;
+  max-width: 27rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 48rem) {
+  .signup__form {
+    max-width: 35rem;
+    margin: unset;
+  }
 }
 
 .signup__form__input {
