@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [See the solution](https://your-solution-url.com)
+- [See the solution on Frontend Mentor](https://www.frontendmentor.io/solutions/just-html-scss-and-vanilla-javascript-a8iR6WZoW)
 - [View live site](https://base-apparel-coming-soon-indol.vercel.app/)
 
 ## My process
