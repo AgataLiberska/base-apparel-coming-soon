@@ -132,7 +132,7 @@
 
     &:focus {
         outline: 0;
-        box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569), $button-focus;
+        box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569),    $button-focus;
     }
 
     @include breakpoint-up(medium) {
