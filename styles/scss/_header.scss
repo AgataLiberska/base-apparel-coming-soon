@@ -1,0 +1,23 @@
+.header {
+    padding: 2rem;
+
+    @include breakpoint-up(medium) {
+        padding: 4.75rem 3rem 8rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 4.75rem 6rem 8.5rem;
+    }
+
+    @include breakpoint-up(xlarge) {
+        padding: 4.75rem 10.5rem 8.5rem;
+    }
+}
+
+.header__logo {
+    height: 1.25rem;
+
+    @include breakpoint-up(medium) {
+        height: 2rem;
+    }
+}

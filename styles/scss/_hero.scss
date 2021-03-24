@@ -1,0 +1,22 @@
+.hero {
+    height: 66vw;
+    width: 100%;
+    background-image: url('/images/hero-mobile.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40vw;
+        height: 100%;
+        background-image: url('/images/hero-desktop.jpg');
+    }
+
+    @include breakpoint-up(large) {
+        width: 42vw;
+    }
+}
